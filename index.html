@@ -7,6 +7,7 @@ layout: default
     {% for post in site.posts %}
     	
     	<section>
+    		<p>{{ site.baseurl }}</p>
 	    	<h2 class="alt"><strong><a href="{{ post.url }}">{{ post.title }}</a></strong></h2>
 	    	<li><span>{{ post.date | date_to_string }}</span></li>
 
