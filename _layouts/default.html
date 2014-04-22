@@ -1,0 +1,67 @@
+{% include header.html %}
+
+    <body>
+
+        {% include menu.html %}
+
+        <div id="main">
+
+          <!-- Intro -->
+          <section id="top" class="one">
+            <div class="container">
+
+              <a href="" class="image featured"><img src="{{ site.baseurl }}images/pic01.jpg" alt="" /></a>
+
+              {{ content }}
+
+            </div>
+          </section>
+
+          <!-- About Me -->
+          <section id="about" class="three">
+            <div class="container">
+
+              <header>
+                <h2>Sobre Mim</h2>
+              </header>
+
+              <a href="http://facebook.com/alinetrres" class="image featured"><img src="{{ site.baseurl }}images/me.jpg" alt="" width="700" height="432"/></a>
+              
+              <p>Esta sou eu para quem tiver curiosidade. Sendo assim, convido todas a me adicionarem ou seguirem no facebook, twitter, instagram... ;)</p>
+
+            </div>
+          </section>
+      
+          <!-- Contact -->
+          <section id="contact" class="four">
+            <div class="container">
+
+              <header>
+                <h2>Contato</h2>
+              </header>
+
+              <p>Para quem quiser me enviar uma mensagem - críticas, elogios, xingamento (brincadeira... hehe).</p>
+              
+              <form method="post" action="#">
+                <div class="row half">
+                  <div class="6u"><input type="text" class="text" name="name" placeholder="Nome" /></div>
+                  <div class="6u"><input type="text" class="text" name="email" placeholder="Email" /></div>
+                </div>
+                <div class="row half">
+                  <div class="12u">
+                    <textarea name="message" placeholder="Mensagem"></textarea>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="12u">
+                    <a href="#" class="button submit">Enviar Mensagem</a>
+                  </div>
+                </div>
+              </form>
+
+            </div>
+          </section>
+
+        </div>
+    </body>
+</html>
