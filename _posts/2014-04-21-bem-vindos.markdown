@@ -1,6 +1,10 @@
 ---
-layout: default
+layout: post2
 title:  "Bem vindos!"
+resumo: >
+  Bem vindas ao meu querido blog!
+  
+  É com muito orgulho que estou lançando este blog para ir postando dicas, videos, novidades no mundo dos cachos. Aproveitando que estou em faze de transição do liso para o cacheado.
 ---
 
 Bem vindas ao meu querido blog!

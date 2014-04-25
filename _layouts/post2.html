@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+{% include header.html %}
+
+<body>
+
+	{% include menu.html %}
+
+	<a href="{{ site.baseurl }}">Base Url</a>
+
+	<div id="main">
+		
+		<section>
+			<h2 class="alt"><strong><a href="{{ post.url }}">{{ page.title }}</a></strong></h2>
+		</section>
+		<article>
+			{{ content }}
+		</article>	
+						
+	</div>
+</body>
+</html
