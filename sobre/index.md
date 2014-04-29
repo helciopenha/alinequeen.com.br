@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Sobra
+title: Sobre
 class: three
-description: List of all presentations
+description: Sobre
 ---
 
 Olá! Me chamo Aline Torres.

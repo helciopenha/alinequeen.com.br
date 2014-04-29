@@ -25,9 +25,9 @@
 			
 			-->
 			<ul>
-				<li><a href="#top" id="top-link" class="skel-panels-ignoreHref"><span class="fa fa-home">Blog</span></a></li>
-				<li><a href="#about" id="about-link" class="skel-panels-ignoreHref"><span class="fa fa-user">About Me</span></a></li>
-				<li><a href="#contact" id="contact-link" class="skel-panels-ignoreHref"><span class="fa fa-envelope">Contact</span></a></li>
+				<li><a href="/" {% if page.menu_current == null %}class="ativo" {% endif %}><span class="fa fa-home">Blog</span></a></li>
+				<li><a href="/sobre" {% if page.menu_current == "sobre" %}class="ativo" {% endif %}><span class="fa fa-user">Sobre</span></a></li>
+				<li><a href="/contato" {% if page.menu_current == "contato" %}class="ativo" {% endif %}><span class="fa fa-envelope">Contato</span></a></li>
 			</ul>
 		</nav>
 			
