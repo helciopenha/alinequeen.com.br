@@ -175,7 +175,6 @@ article:last-child {
 	.image.avatar48 {
 		width: 48px;
 		height: 48px;
-		background: #f00;
 	}
 
 		.image.avatar48 img {
@@ -848,7 +847,7 @@ table {
 	position: fixed;
 	top: 0;
 	left: 0;
-	width: 375px;
+	width: 230px;
 	height: 100%;
 	color: #fff;
 	background: rgb(169,141,122) url('../images/overlay.png');
@@ -871,8 +870,8 @@ table {
 	}
 
 	#header .icons {
-		font-size: 0.8em;
-		margin: 0 0 1em 0;
+		font-size: 0.7em;
+		margin: 0 0 0.8em 0;
 		text-align: center;
 	}
 	
@@ -890,6 +889,7 @@ table {
 			}
 
 #logo {
+	top: 80px;
 	position: relative;
 	margin: 1.75em 1.5em 1.5em 1.5em;
 	min-height: 48px;
@@ -900,14 +900,14 @@ table {
 		position: relative;
 		color: #fff;
 		font-weight: 600;
-		font-size: 1em;
+		font-size: 0.8em;
 		line-height: 1em;
 	}
 
 	#logo .byline {
 		position: relative;
 		display: block;
-		font-size: 0.6em;
+		font-size: 0.58em;
 		color: rgba(255,255,255,0.5);
 		line-height: 1.25em;
 		margin: 0.5em 0 0 0;
@@ -915,11 +915,13 @@ table {
 	
 	#logo .image {
 		position: absolute;
-		left: 0;
-		top: 0;
+		left: 3em;
+		top: -3em;
 	}
 
 #nav {
+	top:80px;
+	position: relative;
 }
 
 	#nav ul {
@@ -930,7 +932,7 @@ table {
 		
 			#nav ul li a {
 				display: block;
-				padding: 0.5em 1.5em 0.5em 1.5em;
+				padding: 0.0em 1.5em 0.0em 1.5em;
 				color: rgba(255,255,255,0.5);
 				text-decoration: none;
 				outline: 0;
@@ -945,7 +947,7 @@ table {
 				#nav ul li a span {
 					position: relative;
 					display: block;
-					font-size: 0.8em;
+					font-size: 0.55em;
 				}
 				
 					#nav ul li a span:before {
@@ -953,27 +955,38 @@ table {
 						left: 0;
 						color: #41484c;
 						text-align: center;
-						width: 1.25em;
-						line-height: 1.75em;
+						width: 1.0em;
+						line-height: 2.6em;
 					}
 
-				#nav ul li a.active {
+				#nav ul li a.ativo {
 					background: rgba(0,0,0,0.15);
 					box-shadow: inset 0 0 0.25em 0 rgba(0,0,0,0.125);
 					color: #fff;
 				}
 
-					#nav ul li a.active span {
+					#nav ul li a.ativo span {
 					}
 
-						#nav ul li a.active span:before {
+						#nav ul li a.ativo span:before {
+							color: #E27689;
+						}
+
+				#nav ul li a:hover {
+					color: #fff;
+				}
+
+					#nav ul li a:hover span {
+					}
+
+						#nav ul li a:hover span:before {
 							color: #E27689;
 						}
 
 /* Rodape */
 #footer
 {
-	margin-left: 375px;
+	margin-left: 230px;
 	text-align: center;
 	background-color: #dce3e2;
 	padding: 3em 0 4em 0;
@@ -999,7 +1012,8 @@ table {
 /* Main */
 #main
 {
-	margin-left: 375px;
+	margin-left: 250px;
+	margin-right: 20px;
 }
 
 	#main > section
