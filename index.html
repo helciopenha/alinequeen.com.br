@@ -1,34 +1,145 @@
----
-layout: default
----
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<title>Aline Queen</title>
+	<style type="text/css">
 
-<div id="home">
-	<ul class="posts">
-    {% for post in site.posts %}
-    	
-    	<section>
+		* {
+			padding: 0px;
+			margin: 0px;
+		}
 
-	    	<h2 class="alt"><strong><a href="{{ post.url }}">{{ post.title }}</a></strong></h2>
-	    	<li><span>{{ post.date | date_to_string }}</span></li>
+		@font-face{
+			font-family:'FontAwesome';
+			src:url('../font/fontawesome-webfont.eot?v=4.0.1');
+			src:url('../font/fontawesome-webfont.eot?#iefix&v=4.0.1') format('embedded-opentype'),
+				url('../font/fontawesome-webfont.woff?v=4.0.1') format('woff'),
+				url('../font/fontawesome-webfont.ttf?v=4.0.1') format('truetype'),
+				url('../font/fontawesome-webfont.svg?v=4.0.1#fontawesomeregular') format('svg');
+			font-weight:normal;
+			font-style:normal
+		}
 
-	    	{% if post.image %}
-            <figure>
-                <a href="{{ post.url }}">
-                    <img src="/{{ post.image }}" class="image full" alt="{{ post.title | strip_html }}" title="{{ post.title | strip_html }}" width="700" height="432" />
-                </a>
-            </figure>
-            {% endif %}
+		body {
+			background: url(images/overlay.png);
+		}
 
-	    	<p>{{ post.resumo }}</p>
+		div {
+			position: fixed;
+			top: 30%;
+			//left: 30%;
+			width: 100%;
+			margin-top: -35px;
+			text-align: center;
+		}
 
-	    	<footer>
-				<strong><a href="{{ post.url }}" >Continue Lendo >></a></strong>
-			</footer>
+		/*div.queen {
+			position: absolute;
+			top: 45%;
+			left: 62%;
+			margin-top: -80px;
+		}*/
+
+		h1 {
+			position: absolute;
+			top: 30%;
+			left: 300px;
+			font-size: 20px;
+			font-family: "Lucida Grande", Helvetica, sans-serif;
+			color: #999;
+			text-indent: 30%;
+		}
+
+		h2 {
+			font-size: 20px;
+			font-family: "Lucida Grande", Helvetica, sans-serif;
+			color: #999;
+			//text-indent: 60%;
+		}
+
+		}
+
+		ul.icons {
+			cursor: default;
+		}
+
+			ul.icons li {
+				display: inline-block;
+			}
+
+			ul.icons a {
+				display: inline-block;
+				width: 2em;
+				height: 8em;
+				line-height: 2em;
+				border: 0;
+			}
+
+		#header .icons {
+			font-size: 2em;
+			margin: 0 0 0 0;
+		}
+		
+			#header .icons a {
+				color: #41484c;
+				-moz-transition: color 0.35s ease-in-out;
+				-webkit-transition: color 0.35s ease-in-out;
+				-o-transition: color 0.35s ease-in-out;
+				-ms-transition: color 0.35s ease-in-out;
+				transition: color 0.35s ease-in-out;
+			}
 			
-		</section>
+				#header .icons a:hover {
+					color: #999;
+				}
 
-		<footer><hr/></footer>
+		.fa {
+			text-decoration: none;
+		}
 
-    {% endfor %}
-	</ul>
-</div>
+			.fa.solo {
+			}
+			
+				.fa.solo span
+				{
+					display: none;
+				}
+
+			.fa:before {
+				display:inline-block;
+				font-family: FontAwesome;
+				font-size: 1.25em;
+				text-decoration: none;
+				font-style: normal;
+				font-weight: normal;
+				line-height: 8;
+				-webkit-font-smoothing:antialiased;
+				-moz-osx-font-smoothing:grayscale;
+			}
+
+			.fa-twitter-square:before{content:"\f081"}
+			.fa-twitter:before{content:"\f099"}
+			.fa-facebook:before{content:"\f09a"}
+			.fa-facebook-square:before{content:"\f082"}
+			.fa-instagram:before{content:"\f16d"}
+
+
+	</style>
+	<link rel="shortcut icon" type="image/ico" href="images/queen.png">
+</head>
+<body>
+	<div id='header'>
+		<img src="images/logo.png"/>
+		<h1>Blog</h2>
+		<h2>Em Breve...</h3>
+		<ul class="icons">
+			<li><a href="https://twitter.com/alinetrres" class="fa fa-twitter solo"><span>Twitter</span></a></li>
+			<li><a href="https://facebook.com/alinetrres" class="fa fa-facebook solo"><span>Facebook</span></a></li>
+			<li><a href="https://instagram.com/alinetrres" class="fa fa-instagram solo"><span>Instagram</span></a></li>
+		</ul>	
+	</div>
+
+
+</body>
+</html>
