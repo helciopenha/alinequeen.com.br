@@ -1,11 +1,13 @@
 ---
 layout: default
-title: Sobra
+title: Sobre
 class: three
-description: List of all presentations
+description: Sobre
 ---
 
 Olá! Me chamo Aline Torres.
+
+{{ page.menu_current }}
 
 Quem quiser me seguir no facebook, twitter ou instagram, meus contatos estão ao lado.
 

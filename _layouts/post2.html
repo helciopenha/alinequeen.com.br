@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+{% include header.html %}
+
+<body>
+
+	{% include menu.html %}
+
+	<div id="main">
+		<section>
+			<h2 class="alt"><strong><a href="{{ post.url }}">{{ page.title }}</a></strong></h2>
+			<ul><li><span>{{ page.date | date:"%d/%m/%Y" }}</span></li></ul>
+		</section>
+		<article class="post">
+			{{ content }}
+		</article>
+
+	</div>
+
+	<footer><hr/></footer>
+
+	<div id="disqus">
+		{% include disqus.html %}
+	</div>
+  
+	<div id="footer">
+
+	<!-- Copyright -->
+	  <div class="copyright">
+
+	    <p>&copy; 2014 Aline Queen. Todos os direitos reservados.</p>
+	    <ul class="menu">
+	      <li>Site por: <a href="http://fb.com/helciopenha">Helcio Penha</a></li>
+	    </ul>
+	  </div>
+
+	</div>
+
+</body>
+</html

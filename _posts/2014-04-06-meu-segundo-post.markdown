@@ -1,6 +1,6 @@
 ---
 title: Meu segundo post
-layout: default
+layout: post2
 author: Aline Torres
 author_link: http://twitter.com/alinetrres
 author_profile: https://facebook.com/alinetrres/

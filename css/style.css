@@ -30,11 +30,13 @@
 /* Basico */
 body {
 	background: #fff;
+	box-shadow: inset 0 1px 0 0 rgba(0,0,0,0.05), inset 0 0.1em 0.1em 0 rgba(0,0,0,0.025);
+	background-image: url('../images/texture-white.jpg');
 }
 
 body,input,textarea,select {
 	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 19pt;
+	font-size: 22px;
 	font-weight: 300;
 	line-height: 1.75em;
 	color: #888;
@@ -43,7 +45,7 @@ body,input,textarea,select {
 
 h1,h2,h3,h4,h5,h6 {
 	font-weight: 200;
-	color: #666;
+	color: #fff;
 	line-height: 1.5em;
 }
 
@@ -93,7 +95,7 @@ em, i {
 a {
 	text-decoration: none;
 	color: inherit;
-	border-bottom: dotted 1px rgba(128,128,128,0.5);
+	border-bottom: solid 3px #ff0066;
 	-moz-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
 	-webkit-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
 	-o-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
@@ -103,8 +105,7 @@ a {
 }
 
 	a:hover {
-		color: #E27689;
-		border-bottom-color: rgba(255,255,255,0);
+		border-bottom-color: #000;
 	}
 
 sub {
@@ -175,7 +176,6 @@ article:last-child {
 	.image.avatar48 {
 		width: 48px;
 		height: 48px;
-		background: #f00;
 	}
 
 		.image.avatar48 img {
@@ -439,7 +439,7 @@ table {
 	.fa:before {
 		display:inline-block;
 		font-family: FontAwesome;
-		font-size: 1.25em;
+		font-size: 1.50em;
 		text-decoration: none;
 		font-style: normal;
 		font-weight: normal;
@@ -848,10 +848,10 @@ table {
 	position: fixed;
 	top: 0;
 	left: 0;
-	width: 375px;
+	width: 230px;
 	height: 100%;
 	color: #fff;
-	background: rgb(169,141,122) url('../images/overlay.png');
+	background: #ff0066 url('../images/overlay.png');
 	box-shadow: inset -0.25em 0 0.25em 0 rgba(0,0,0,0.125);
 	text-align: right;
 }
@@ -871,13 +871,13 @@ table {
 	}
 
 	#header .icons {
-		font-size: 0.8em;
-		margin: 0 0 1em 0;
+		font-size: 0.75em;
+		margin: 0 0 0.8em 0;
 		text-align: center;
 	}
 	
 		#header .icons a {
-			color: #41484c;
+			color: #fff;
 			-moz-transition: color 0.35s ease-in-out;
 			-webkit-transition: color 0.35s ease-in-out;
 			-o-transition: color 0.35s ease-in-out;
@@ -886,10 +886,11 @@ table {
 		}
 		
 			#header .icons a:hover {
-				color: #fff;
+				color: #ff99cc;
 			}
 
 #logo {
+	top: 80px;
 	position: relative;
 	margin: 1.75em 1.5em 1.5em 1.5em;
 	min-height: 48px;
@@ -900,7 +901,7 @@ table {
 		position: relative;
 		color: #fff;
 		font-weight: 600;
-		font-size: 1em;
+		font-size: 0.9em;
 		line-height: 1em;
 	}
 
@@ -908,18 +909,20 @@ table {
 		position: relative;
 		display: block;
 		font-size: 0.6em;
-		color: rgba(255,255,255,0.5);
+		color: rgba(255,255,255,0.8);
 		line-height: 1.25em;
 		margin: 0.5em 0 0 0;
 	}
 	
 	#logo .image {
 		position: absolute;
-		left: 0;
-		top: 0;
+		left: 3em;
+		top: -3em;
 	}
 
 #nav {
+	top:80px;
+	position: relative;
 }
 
 	#nav ul {
@@ -930,8 +933,8 @@ table {
 		
 			#nav ul li a {
 				display: block;
-				padding: 0.5em 1.5em 0.5em 1.5em;
-				color: rgba(255,255,255,0.5);
+				padding: 0.0em 1.5em 0.0em 1.5em;
+				color: #fff;
 				text-decoration: none;
 				outline: 0;
 				border: 0;
@@ -945,35 +948,48 @@ table {
 				#nav ul li a span {
 					position: relative;
 					display: block;
+					text-align: right;
 					font-size: 0.8em;
 				}
 				
 					#nav ul li a span:before {
 						position: absolute;
 						left: 0;
-						color: #41484c;
+						color: #fff;
 						text-align: center;
-						width: 1.25em;
-						line-height: 1.75em;
+						width: 1.0em;
+						line-height: 2em;
+						font-size: 1.2em;
 					}
 
-				#nav ul li a.active {
+				#nav ul li a.ativo {
 					background: rgba(0,0,0,0.15);
 					box-shadow: inset 0 0 0.25em 0 rgba(0,0,0,0.125);
+					color: #ff99cc;
+				}
+
+					#nav ul li a.ativo span {
+					}
+
+						#nav ul li a.ativo span:before {
+							color: #ff99cc;
+						}
+
+				#nav ul li a:hover {
 					color: #fff;
 				}
 
-					#nav ul li a.active span {
+					#nav ul li a:hover span {
 					}
 
-						#nav ul li a.active span:before {
-							color: #E27689;
+						#nav ul li a:hover span:before {
+							color: #ff99cc;
 						}
 
 /* Rodape */
 #footer
 {
-	margin-left: 375px;
+	margin-left: 230px;
 	text-align: center;
 	background-color: #dce3e2;
 	padding: 3em 0 4em 0;
@@ -997,43 +1013,54 @@ table {
 		}
 
 /* Main */
-#main
-{
-	margin-left: 375px;
+#main {
+	margin-left: 250px;
+	margin-right: 20px;
 }
 
-	#main > section
-	{
+	#main > section {
 		margin: 0;
 		overflow: hidden;
 		padding: 3em 0 4em 0;
-		box-shadow: inset 0 1px 0 0 rgba(0,0,0,0.05), inset 0 0.1em 0.1em 0 rgba(0,0,0,0.025);
-		text-align: center;
-		background-image: url('../images/overlay.png');
+		//box-shadow: inset 0 1px 0 0 rgba(0,0,0,0.05), inset 0 0.1em 0.1em 0 rgba(0,0,0,0.025);
+		text-align: justify;
 	}
 
-	#main > section.one
-	{
-		background: #fff;
+	#main > section h2, li {
+		text-align: center;
+		padding-left: 0em;
+	}
+	
+	#main > section li {
+		font-size: 18px;
+	}
+
+	#main > section.one{
+		//background: #fff;
 		padding-top: 0;
 	}
 
-		#main > section.one .image.featured
-		{
+		#main > section.one .image.featured{
 			margin-bottom: 3em;
 		}
 
-	#main > section.two
-	{
+	#main > section.two{
 		background-color: #f5fafa;
 	}
 
-	#main > section.three
-	{
+	#main > section.three{
 		background-color: #ecf1f1;
 	}
 
-	#main > section.four
-	{
+	#main > section.four{
 		background-color: #e8edec;
 	}
+/*Comentarios*/
+#disqus {
+	margin-left: 250px;
+	margin-right: 20px;
+	padding: 3em 0 4em 0;
+	box-shadow: inset 0 1px 0 0 rgba(0,0,0,0.05), inset 0 0.1em 0.1em 0 rgba(0,0,0,0.025);
+	font-size: 0.8em;
+	color: #000;
+}
