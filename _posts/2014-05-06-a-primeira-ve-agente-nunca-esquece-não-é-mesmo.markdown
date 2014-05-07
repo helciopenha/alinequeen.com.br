@@ -1,6 +1,6 @@
 ---
 layout: post2
-title:  "Bem vindos!"
+title:  "A primeira vez agente nunca esquece, não é mesmo?!"
 resumo: >
   Bem vindas ao meu querido blog!
   
