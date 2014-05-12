@@ -39,13 +39,13 @@ body,input,textarea,select {
 	font-size: 22px;
 	font-weight: 300;
 	line-height: 1.75em;
-	color: #888;
+	color: #000;
 	-webkit-text-stroke: 0.15px;
 }
 
 h1,h2,h3,h4,h5,h6 {
 	font-weight: 200;
-	color: #fff;
+	color: #000;
 	line-height: 1.5em;
 }
 
@@ -1037,7 +1037,7 @@ table {
 
 	#main > section.one{
 		//background: #fff;
-		padding-top: 0;
+		padding-top: 2em;
 	}
 
 		#main > section.one .image.featured{
@@ -1054,6 +1054,9 @@ table {
 
 	#main > section.four{
 		background-color: #e8edec;
+	}
+	#main .icons a:hover {
+		color: #ff99cc;
 	}
 /*Comentarios*/
 #disqus {

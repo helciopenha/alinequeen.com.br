@@ -6,22 +6,46 @@
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
 
-	<link rel="shortcut icon" type="image/ico" href="{{ site.baseurl }}images/favicon.png">
+	<link rel="shortcut icon" type="image/ico" href="{{ site.baseurl }}images/queen.png">
 
 	<!--<link rel="stylesheet" type="text/css" href="css/main.css">-->
 
 	<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600" rel="stylesheet" type="text/css" />
 	<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
-	<script src="{{ site.baseurl }}js/jquery.min.js"></script>
-	<!--<script src="{{ site.baseurl }}js/skel.min.js"></script>
-	<script src="{{ site.baseurl }}js/skel-panels.min.js"></script>
-	<script src="{{ site.baseurl }}js/init.js"></script>
-	<noscript>
-		<link rel="stylesheet" href="{{ site.baseurl }}css/skel-noscript.css" />-->
+	<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+	
 		<link rel="stylesheet" href="{{ site.baseurl }}css/style.css" />
-		<!--<link rel="stylesheet" href="{{ site.baseurl }}css/style-wide.css" />
-	</noscript>-->
+		<link rel="stylesheet" href="{{ site.baseurl }}css/style-mobile.css" media="screen and (min-width: 320px) and (min-width: 480px) and (orientation: portrait)" />
+		<!--<link rel="stylesheet" href="{{ site.baseurl }}css/style-wide.css" />-->
 
 	<!--[if lte IE 9]><link rel="stylesheet" href="css/ie9.css" /><![endif]-->
 	<!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
+
+
+
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			
+			var deviceAgent = navigator.userAgent.toLowerCase();
+			var agentID = (deviceAgent.match(/(iphone|ipod|ipad)/) ||
+							deviceAgent.match(/(android)/) ||
+							deviceAgent.match(/(iemobile)/) ||
+							deviceAgent.match(/iphone/i) ||
+							deviceAgent.match(/ipad/i) ||
+							deviceAgent.match(/ipod/i) ||
+							deviceAgent.match(/blackberry/i) ||
+							deviceAgent.match(/bada/i));
+			if (agentID) {
+				$("#header").hide();
+				$("#mtoggle").click(function() {
+					$("#header").toggle( "drop", 200 );
+				});
+			}else {
+				$("#mtoggle").hide();
+			}
+		});
+	</script>
+
 </head>

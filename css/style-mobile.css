@@ -3,19 +3,21 @@
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
-
+@media screen and (min-width: 320px) {
 /*********************************************************************************/
 /* Basic                                                                         */
 /*********************************************************************************/
 
-	body,input,textarea,select
-	{
-		font-size: 14pt;
+	body,input,textarea,select{
+		font-size: 2.5em;
 	}
 
-	h2
-	{
+	h1,li,span{
 		font-size: 1.5em;
+	}
+
+	h2{
+		font-size: 2em;
 		letter-spacing: 0;
 		font-weight: 300;
 	}
@@ -25,37 +27,45 @@
 		padding: 0 15px 0 15px;
 	}
 
-	.image.featured
-	{
-		position: relative;
-		min-height: 10em;
-		overflow: hidden;
-	}
-	
-		.image.featured img
-		{
-			position: relative;
-			height: 10em;
-			width: auto;
-			/*
-				Stuff below is automatically calculated using JS. It sucks, but there
-				doesn't appear to be a way to center the <img> inside its parent with
-				pure CSS (since we don't know its width).
-			
-				left: 0;
-				margin-left: 0;
-			*/
-		}
 
 /*********************************************************************************/
 /* Main                                                                          */
 /*********************************************************************************/
 
-	#main
-	{
+	#main{
+		width:100%;
+		margin-left: 20px;
+		margin-right: 30px;
 	}
 	
-		#main > section
-		{
+		#main > section{
 			padding: 2em 0 2em 0;
 		}
+
+		#main > button {
+			text-align: center;
+			position: fixed;
+		}
+
+		#mtoggle {
+			font-size: 2em;
+			color: #666;
+			text-align: center;
+			position: fixed;
+		}
+	#header{
+		width: 600px;
+	}
+	
+	#footer{
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+
+	#disqus{
+		margin-left: 20px;
+		margin-right: 20px;
+		padding: 0em 0em 0em 0em;
+	}
+
+}
