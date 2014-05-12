@@ -6,35 +6,20 @@
 <body>
 
   {% include menu.html %}
-
-  <div id="main">
+  <!--Div 'main' vem do include 'menu.html'-->
 
     <!-- Intro -->
     <section id="top" class="one">
       <div class="container">
 
-        <a href="{{ page.menu_current }}" class="image featured"><img src="{{ site.baseurl }}images/pic01.jpg" alt="" /></a>
+        <a href="{{ page.menu_current }}" class="image featured"><img src="{{ site.baseurl }}images/coroa-princesa.jpg" alt="" /></a>
 
         {{ content }}
 
       </div>
     </section>
 
-    <!-- About Me -->
-    <section id="about" class="two">
-      <div class="container">
-
-        <header>
-          <h2>Sobre Mim</h2>
-        </header>
-
-        <a href="http://facebook.com/alinetrres" class="image featured"><img src="{{ site.baseurl }}images/me.jpg" alt="" width="700" height="432"/></a>
-
-        <p>Esta sou eu para quem tiver curiosidade. Sendo assim, convido todas a me adicionarem ou seguirem no facebook, twitter, instagram... ;)</p>
-
-      </div>
-    </section>
-  </div>
+  </div> <!-- Finalizando o div='main'-->
 
   <div id="footer">
     
@@ -47,5 +32,6 @@
       </div>
     
   </div>
+
 </body>
 </html>
