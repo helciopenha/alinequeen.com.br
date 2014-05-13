@@ -64,11 +64,11 @@ h1,h2,h3,h4,h5,h6 {
 	}
 
 		h2.alt {
-			color: #888;
+			color: #000;
 		}
 
 		h2.alt strong {
-			color: #666;
+			color: #000;
 		}
 
 	h3 {
@@ -85,7 +85,7 @@ footer {
 
 strong, b {
 	font-weight: 300;
-	color: #666;
+	color: #000;
 }
 
 em, i {
@@ -1018,6 +1018,9 @@ table {
 	margin-right: 20px;
 }
 
+	#main article{
+		text-align: justify;
+	}
 	#main > section {
 		margin: 0;
 		overflow: hidden;
@@ -1026,12 +1029,20 @@ table {
 		text-align: justify;
 	}
 
-	#main > section h2, li {
+	#main li.postIT{
+		position: relative;
+		list-style: circle;
+		left: 30px;
+		font-size: 20px;
+	}
+
+	#main > section h2 {
 		text-align: center;
 		padding-left: 0em;
 	}
 	
 	#main > section li {
+		text-align: center;
 		font-size: 18px;
 	}
 
