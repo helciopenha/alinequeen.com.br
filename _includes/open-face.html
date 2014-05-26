@@ -1,7 +1,8 @@
+<!--Facebook-->
 <meta property="og:url" content="{{ var_url }}" />
 <meta property="og:locale" content="pt_BR" />
 <meta property="og:site_name" content="Aline Queen" />
-<meta property="og:title" content="{% if page.title %}{{ page.title }} &mdash;{% endif %} AlineQueen" />
+<meta property="og:title" content="{% if page.title %}{{ page.title }} &mdash;{% endif %} Aline Queen" />
 <meta property="og:description" content="{{ var_description }}" />
 <meta property="og:image" content="{{ var_image }}" />
 
@@ -10,3 +11,11 @@
 {% else %}
 	<meta property="og:type" content="blog" />
 {% endif %}
+
+<!--Twitter-->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@alinetrres" />
+<meta name="twitter:url" content="{{ var_url }}" />
+<meta name="twitter:title" content="{% if page.title %}{{ page.title }} &mdash;{% endif %} Aline Queen" />
+<meta name="twitter:description" content="{{ var_description }}" />
+<meta name="twitter:image" content="{{ var_image }}" />

@@ -1,13 +1,19 @@
-{% if page.image %}
-	{% capture var_image %}{{ site.url }}/{{ page.image }}{% endcapture %}
+{% if page.resumo %}
+	{% capture var_description %}{{ page.resumo | markdownify | strip_html | escape }}{% endcapture %}
 {% else %}
-	{% capture var_image %}{{ site.url }}/images/coroa-princesa.jpg{% endcapture %}
+	{% capture var_description %}Blog sobre moda em geral, onde você também pode participar.{% endcapture %}
 {% endif %}
 
-{% capture var_url %}{{ site.url }}{{ page.url | remove:'index.html' }}{% endcapture %}
+{% if page.image %}
+	{% capture var_image %}{{ site.baseurl }}/{{ page.image }}{% endcapture %}
+{% else %}
+	{% capture var_image %}{{ site.baseurl }}/images/coroa-princesa.jpg{% endcapture %}
+{% endif %}
+
+{% capture var_url %}{{ site.baseurl }}{{ page.url | remove:'index.html' }}{% endcapture %}
 
 <head>
-	<title>{% if page.title %}{{ page.title }} &mdash;{% endif %} AlineQueen</title>
+	<title>{% if page.title %}{{ page.title }} &mdash;{% endif %} Aline Queen</title>
 
 	<meta charset="UTF-8">
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
