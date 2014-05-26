@@ -1,7 +1,7 @@
 {% if page.image %}
-	{% capture var_image %}{{ site.url }}{{ page.image }}{% endcapture %}
+	{% capture var_image %}{{ site.url }}/{{ page.image }}{% endcapture %}
 {% else %}
-	{% capture var_image %}{{ site.url }}images/coroa-princesa.jpg{% endcapture %}
+	{% capture var_image %}{{ site.url }}/images/coroa-princesa.jpg{% endcapture %}
 {% endif %}
 
 {% capture var_url %}{{ site.url }}{{ page.url | remove:'index.html' }}{% endcapture %}
