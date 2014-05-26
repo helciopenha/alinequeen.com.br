@@ -1,0 +1,12 @@
+<meta property="og:url" content="{{ var_url }}" />
+<meta property="og:locale" content="pt_BR" />
+<meta property="og:site_name" content="Aline Queen" />
+<meta property="og:title" content="{% if page.title %}{{ page.title }} &mdash;{% endif %} AlineQueen" />
+<meta property="og:description" content="{{ var_description }}" />
+<meta property="og:image" content="{{ var_image }}" />
+
+{% if page.layout == 'post' %}
+	<meta property="og:type" content="article" />
+{% else %}
+	<meta property="og:type" content="blog" />
+{% endif %}
