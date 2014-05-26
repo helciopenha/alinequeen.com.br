@@ -4,12 +4,6 @@
 	{% capture var_image %}{{ site.url }}/images/coroa-princesa.jpg{% endcapture %}
 {% endif %}
 
-{% if page.resumo %}
-	{% capture var_description %}{{ page.resumo | markdownify | strip_html | escape }}{% endcapture %}
-{% else %}
-	{% capture var_description %}Blog Aline Queen, para todas as rainhas que queiram dicas de moda em geral ou compartilhar algo conosco.{% endcapture %}
-{% endif %}
-
 {% capture var_url %}{{ site.url }}{{ page.url | remove:'index.html' }}{% endcapture %}
 
 <head>
@@ -20,10 +14,10 @@
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
 	
-	<meta property="og:title" content="{{ page.title }}"/>
-	<meta property="og:image" content="{{ var_image }}"/>
-	<meta property="og:site_name" content="Aline Queen"/>
-	<meta property="og:description" content="var_description"/>
+	<meta property="og:title" content="Facebook Open Graph META Tags"/>
+	<meta property="og:image" content="http://davidwalsh.name/wp-content/themes/klass/img/facebooklogo.png"/>
+	<meta property="og:site_name" content="David Walsh Blog"/>
+	<meta property="og:description" content="Facebook's Open Graph protocol allows for web developers to turn their websites into Facebook "graph" objects, allowing a certain level of customization over how information is carried over from a non-Facebook website to Facebook when a page is 'recommended', 'liked', or just generally shared."/>
 
 
 	<link rel="shortcut icon" type="image/ico" href="{{ site.baseurl }}images/queen.png">
