@@ -840,9 +840,13 @@ table {
 	height: 150px;
 }
 
-.nome {
-	fill: #fff;
-}
+	.nome {
+		fill: #000;
+	}
+
+	.coroa {
+		fill: #ff007f;
+	}
 
 #header {
 	position: fixed;
