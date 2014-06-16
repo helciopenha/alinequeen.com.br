@@ -58,7 +58,11 @@ O sulfato é o começo de tudo. Se você não o utilizar, você deve evitar cond
 
 Os silicones insolúveis fixam nos fios, fazendo com que eles fiquem pesados, sem movimento, além de criar uma camada que impede que seu eles recebam os benefícios de uma hidratação, por exemplo. A longo prazo, o cabelo estará sofrendo de ressecamento a e sensibilizado por falta de nutrição.
 
-Eu faço o uso da técnica low poo abaixo estão as fotos dos produtos que utilizo, todos são liberados. Vou deixar também em pdf no link abaixo o arquivo com os componentes proibidos e liberados para a técnica low / no poo. Beijos lindonas até a próxima!!! :***
+Vou deixar aqui o link para download dos arquivos com os componentes proibidos e liberados para a técnica low / no poo.
+
+[Componentes Proibidos/Liberados]({{ site.baseurl }}/anexos/2014-06-16-lou-poo-componentes.zip).
+
+Eu faço o uso da técnica low poo abaixo estão as fotos dos produtos que utilizo, todos são liberados. Beijos lindonas até a próxima!!! :***
 
 <figure>
   <img
@@ -89,6 +93,4 @@ Eu faço o uso da técnica low poo abaixo estão as fotos dos produtos que utili
     height="400"
   />
 </figure>
-
-[Componentes Proibidos/Liberados]({{ site.baseurl }}/anexos/2014-06-16-lou-poo-componentes.zip). < _anexo_
 
