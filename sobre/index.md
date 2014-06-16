@@ -13,21 +13,21 @@ O projeto [alinequeen](http://alinequeen.com.br) é apenas o primeiro passo, mas
 E aqui uma foto minha para vocês me conhecerem melhor! <span class="fa fa-smile-o"></span>
 
 <figure>
-  <img
-    src="{{ sit.baseurl }}/images/sobre.jpg"
-    alt="Atalho para preservar o log entre navegação"
-    width="700"
-    -webkit-border: 30 30 30 10 stretch;
-  />
+	<img
+	class="image"
+	src="{{ sit.baseurl }}/images/sobre.jpg"
+	alt="Atalho para preservar o log entre navegação"
+	
+	/>
 </figure>
 
 
 Quem quiser me seguir nas redes sociais: 
-		<ul class="icons">
-			<li><a href="https://twitter.com/alinetrres" class="fa fa-twitter solo"><span>Twitter</span></a></li>
-			<li><a href="https://facebook.com/alinetrres" class="fa fa-facebook solo"><span>Facebook</span></a></li>
-			<li><a href="https://instagram.com/alinetrres" class="fa fa-instagram solo"><span>Instagram</span></a></li>
-			<li><a href="https://youtube.com/user/alinetrres" class="fa fa-youtube solo"><span>Youtube</span></a></li>
-			<li><a href="https://pinterest.com/alinectrres" class="fa fa-pinterest solo"><span>Pinterest</span></a></li>
-		</ul>
 
+<ul class="icons">
+	<li><a href="https://twitter.com/alinetrres" class="fa fa-twitter solo"><span>Twitter</span></a></li>
+	<li><a href="https://facebook.com/alinetrres" class="fa fa-facebook solo"><span>Facebook</span></a></li>
+	<li><a href="https://instagram.com/alinetrres" class="fa fa-instagram solo"><span>Instagram</span></a></li>
+	<li><a href="https://youtube.com/user/alinetrres" class="fa fa-youtube solo"><span>Youtube</span></a></li>
+	<li><a href="https://pinterest.com/alinectrres" class="fa fa-pinterest solo"><span>Pinterest</span></a></li>
+</ul>

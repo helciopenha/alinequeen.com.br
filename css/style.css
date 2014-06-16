@@ -5,17 +5,6 @@
 
 @charset 'UTF-8';
 
-@font-face {
-  font-family: 'zapfinoba';
-  src: url('../font/zapfino.eot#zapfino');
-  src: url('../font/zapfino.eot?#iefix') format('embedded-opentype'),
-       url('../font/zapfino.woff') format('woff'),
-       url('../font/zapfino.ttf') format('truetype'),
-       url('../font/zapfino.svg#zapfino') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
 @font-face{
 	font-family:'FontAwesome';
 	src:url('../font/fontawesome-webfont.eot?v=4.0.1');
@@ -86,6 +75,7 @@ footer {
 strong, b {
 	font-weight: 300;
 	color: #000;
+	font-weight: bold;
 }
 
 em, i {
@@ -164,6 +154,7 @@ article:last-child {
 
 /* Imagens */
 .image {
+	float: left;
 	display: inline-block;
 	border: 0;
 }
@@ -844,6 +835,15 @@ table {
 	.fa-turkish-lira:before,.fa-try:before{content:"\f195"}
 
 /* Menu */
+.logo {
+	width: 150px;
+	height: 150px;
+}
+
+.nome {
+	fill: #fff;
+}
+
 #header {
 	position: fixed;
 	top: 0;
@@ -1078,3 +1078,15 @@ table {
 	font-size: 0.8em;
 	color: #000;
 }
+
+.tabela {
+  //float: left;
+  margin-left: 1em;
+  //border: solid 1px red;
+  font-size: 20px;
+}
+
+.tabela i {
+	text-decoration: underline;
+}
+

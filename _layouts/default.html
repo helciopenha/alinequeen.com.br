@@ -4,15 +4,18 @@
 {% include header.html %}
 
 <body>
-
+  
+  {% include likefb.html %}
   {% include menu.html %}
   <!--Div 'main' vem do include 'menu.html'-->
 
     <!-- Intro -->
     <section id="top" class="one">
       <div class="container">
-
-        <a href="{{ page.menu_current }}" class="image featured"><img src="{{ site.baseurl }}images/coroa-princesa.jpg" alt="" /></a>
+        
+        <div class="fb-like" data-href="https://www.facebook.com/blogalinequeen?ref=hl&amp;ref_type=bookmark" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true" data-colorscheme="dark"></div>
+        
+        <a href="{{ page.menu_current }}" class="image featured"><img src="{{ site.baseurl }}/images/coroa-princesa.jpg" alt="" /></a>
 
         {{ content }}
 
@@ -26,9 +29,6 @@
     <!-- Copyright -->
       <div class="copyright">
         <p>&copy; 2014 Aline Queen. Todos os direitos reservados.</p>
-        <ul class="menu">
-          <li>Site por: <a href="http://fb.com/helciopenha">Helcio Penha</a></li>
-        </ul>
       </div>
     
   </div>

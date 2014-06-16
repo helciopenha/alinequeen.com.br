@@ -1,4 +1,9 @@
-name: Your New Jekyll Site
-markdown: redcarpet
-pygments: true
-url: 'http://www.alinequeen.com.br'
+# Site settings
+title: AlineQueen
+description: ""
+baseurl: ""
+url: "http://alinequeen.com.br"
+
+# Build settings
+markdown: kramdown
+permalink: pretty
