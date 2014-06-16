@@ -60,7 +60,7 @@ Os silicones insolúveis fixam nos fios, fazendo com que eles fiquem pesados, se
 
 Vou deixar aqui o link para download dos arquivos com os componentes proibidos e liberados para a técnica low / no poo.
 
-[Componentes Proibidos/Liberados]({{ site.baseurl }}/anexos/2014-06-16-lou-poo-componentes.zip).
+[Componentes Proibidos/Liberados]({{ site.baseurl }}/anexos/2014-06-16-lou-poo-componentes/).
 
 Eu faço o uso da técnica low poo abaixo estão as fotos dos produtos que utilizo, todos são liberados. Beijos lindonas até a próxima!!! :***
 
